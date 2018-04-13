@@ -1,0 +1,338 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7546006D2080A94600DDCCCE /* ColorHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754600642080A94600DDCCCE /* ColorHelper.cpp */; };
+		754600702080A94600DDCCCE /* RGBColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7546006A2080A94600DDCCCE /* RGBColor.cpp */; };
+		754600742080AAA100DDCCCE /* AbstractObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754600622080A94600DDCCCE /* AbstractObject.cpp */; };
+		754600752080AAA100DDCCCE /* AbstractObject.h in Sources */ = {isa = PBXBuildFile; fileRef = 754600632080A94600DDCCCE /* AbstractObject.h */; };
+		754600762080AAA100DDCCCE /* Cube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754600662080A94600DDCCCE /* Cube.cpp */; };
+		754600772080AAA100DDCCCE /* Cube.h in Sources */ = {isa = PBXBuildFile; fileRef = 754600672080A94600DDCCCE /* Cube.h */; };
+		7546007A2080AB2100DDCCCE /* rotating-objects.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754600792080AB2100DDCCCE /* rotating-objects.cpp */; };
+		7546007D2080AB4300DDCCCE /* MovingCube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7546007B2080AB4300DDCCCE /* MovingCube.cpp */; };
+		75D8193620779EE900C85590 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D8193520779EE900C85590 /* OpenGL.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		75D8192820779DF800C85590 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		754600622080A94600DDCCCE /* AbstractObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractObject.cpp; sourceTree = "<group>"; };
+		754600632080A94600DDCCCE /* AbstractObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractObject.h; sourceTree = "<group>"; };
+		754600642080A94600DDCCCE /* ColorHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColorHelper.cpp; sourceTree = "<group>"; };
+		754600652080A94600DDCCCE /* ColorHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorHelper.h; sourceTree = "<group>"; };
+		754600662080A94600DDCCCE /* Cube.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cube.cpp; sourceTree = "<group>"; };
+		754600672080A94600DDCCCE /* Cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cube.h; sourceTree = "<group>"; };
+		754600692080A94600DDCCCE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7546006A2080A94600DDCCCE /* RGBColor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RGBColor.cpp; sourceTree = "<group>"; };
+		7546006B2080A94600DDCCCE /* RGBColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGBColor.h; sourceTree = "<group>"; };
+		754600792080AB2100DDCCCE /* rotating-objects.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "rotating-objects.cpp"; path = "examples/rotating-objects.cpp"; sourceTree = "<group>"; };
+		7546007B2080AB4300DDCCCE /* MovingCube.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MovingCube.cpp; path = examples/custom_objects/MovingCube.cpp; sourceTree = "<group>"; };
+		7546007C2080AB4300DDCCCE /* MovingCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MovingCube.h; path = examples/custom_objects/MovingCube.h; sourceTree = "<group>"; };
+		75D8192A20779DF800C85590 /* rotating-objects */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "rotating-objects"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75D8193520779EE900C85590 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75D8192720779DF800C85590 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75D8193620779EE900C85590 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		754600722080AA1B00DDCCCE /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				754600622080A94600DDCCCE /* AbstractObject.cpp */,
+				754600632080A94600DDCCCE /* AbstractObject.h */,
+				754600662080A94600DDCCCE /* Cube.cpp */,
+				754600672080A94600DDCCCE /* Cube.h */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		7546007E2080AB4700DDCCCE /* custom_objects */ = {
+			isa = PBXGroup;
+			children = (
+				7546007B2080AB4300DDCCCE /* MovingCube.cpp */,
+				7546007C2080AB4300DDCCCE /* MovingCube.h */,
+			);
+			name = custom_objects;
+			sourceTree = "<group>";
+		};
+		7546007F2080AB5300DDCCCE /* examples */ = {
+			isa = PBXGroup;
+			children = (
+				754600792080AB2100DDCCCE /* rotating-objects.cpp */,
+				7546007E2080AB4700DDCCCE /* custom_objects */,
+			);
+			name = examples;
+			sourceTree = "<group>";
+		};
+		75D8192120779DF800C85590 = {
+			isa = PBXGroup;
+			children = (
+				754600722080AA1B00DDCCCE /* Objects */,
+				754600642080A94600DDCCCE /* ColorHelper.cpp */,
+				754600652080A94600DDCCCE /* ColorHelper.h */,
+				754600692080A94600DDCCCE /* README.md */,
+				7546006A2080A94600DDCCCE /* RGBColor.cpp */,
+				7546006B2080A94600DDCCCE /* RGBColor.h */,
+				7546007F2080AB5300DDCCCE /* examples */,
+				75D8192B20779DF800C85590 /* Products */,
+				75D8193420779EE900C85590 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		75D8192B20779DF800C85590 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75D8192A20779DF800C85590 /* rotating-objects */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75D8193420779EE900C85590 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75D8193520779EE900C85590 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75D8192920779DF800C85590 /* rotating-objects */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75D8193120779DF800C85590 /* Build configuration list for PBXNativeTarget "rotating-objects" */;
+			buildPhases = (
+				75D8192620779DF800C85590 /* Sources */,
+				75D8192720779DF800C85590 /* Frameworks */,
+				75D8192820779DF800C85590 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "rotating-objects";
+			productName = OpenGL_Test;
+			productReference = 75D8192A20779DF800C85590 /* rotating-objects */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75D8192220779DF800C85590 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Mario Lubenka";
+				TargetAttributes = {
+					75D8192920779DF800C85590 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 75D8192520779DF800C85590 /* Build configuration list for PBXProject "OpenGLHelper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 75D8192120779DF800C85590;
+			productRefGroup = 75D8192B20779DF800C85590 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75D8192920779DF800C85590 /* rotating-objects */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75D8192620779DF800C85590 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754600742080AAA100DDCCCE /* AbstractObject.cpp in Sources */,
+				7546007A2080AB2100DDCCCE /* rotating-objects.cpp in Sources */,
+				754600752080AAA100DDCCCE /* AbstractObject.h in Sources */,
+				754600762080AAA100DDCCCE /* Cube.cpp in Sources */,
+				754600772080AAA100DDCCCE /* Cube.h in Sources */,
+				754600702080A94600DDCCCE /* RGBColor.cpp in Sources */,
+				7546007D2080AB4300DDCCCE /* MovingCube.cpp in Sources */,
+				7546006D2080A94600DDCCCE /* ColorHelper.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		75D8192F20779DF800C85590 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		75D8193020779DF800C85590 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		75D8193220779DF800C85590 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/opt/X11/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/opt/X11/lib,
+					/usr/local/lib,
+				);
+				OTHER_LDFLAGS = "-lGLUT";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		75D8193320779DF800C85590 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/opt/X11/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/opt/X11/lib,
+					/usr/local/lib,
+				);
+				OTHER_LDFLAGS = "-lGLUT";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75D8192520779DF800C85590 /* Build configuration list for PBXProject "OpenGLHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75D8192F20779DF800C85590 /* Debug */,
+				75D8193020779DF800C85590 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75D8193120779DF800C85590 /* Build configuration list for PBXNativeTarget "rotating-objects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75D8193220779DF800C85590 /* Debug */,
+				75D8193320779DF800C85590 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75D8192220779DF800C85590 /* Project object */;
+}

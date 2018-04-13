@@ -17,7 +17,6 @@ RGBColor ColorHelper::getColor(Color color) {
             return RGBColor(0, 0, 255);
         default:
             return RGBColor();
-            
     }
 }
 

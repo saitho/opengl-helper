@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "66F69F81B6EDB7C2D3CD4C8296009D696DB52C1E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "CA34A3E2CB023D4B8A8AC2DCE8829F56095E884C" : 9223372036854775807,
+    "66F69F81B6EDB7C2D3CD4C8296009D696DB52C1E" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "18C9C493-455B-4708-968F-2EAF6D62809B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "CA34A3E2CB023D4B8A8AC2DCE8829F56095E884C" : "",
+    "66F69F81B6EDB7C2D3CD4C8296009D696DB52C1E" : "OpenGLHelper\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "OpenGLHelper",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "OpenGLHelper.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:saitho\/opengl-helper.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "66F69F81B6EDB7C2D3CD4C8296009D696DB52C1E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "code.fbi.h-da.de:praktika-ss2018-747796-746156\/graphische-datenverarbeitung.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CA34A3E2CB023D4B8A8AC2DCE8829F56095E884C"
+    }
+  ]
+}

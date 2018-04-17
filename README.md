@@ -46,4 +46,19 @@ glColor3f( RGBColor(128, 128, 128) );
 
 ### Showing x, y and z axes
 
-TBD
+```
+#include "../OpenGLHelper/AxisHelper.h"
+// in display func:
+AxisHelper ah = AxisHelper();
+ah.renderAxes();
+```
+
+Available settings:
+
+setLength(float lineLength)
+setWidth(float lineWidth)
+setShowOrigin(bool showOrigin)
+
+### OpenGL objects
+
+OpenGL objects enable you to manipulate the object by calling transformation and translation methods on the object. See examples/ directory for example code.

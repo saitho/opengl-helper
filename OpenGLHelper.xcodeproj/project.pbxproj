@@ -15,10 +15,31 @@
 		754600772080AAA100DDCCCE /* Cube.h in Sources */ = {isa = PBXBuildFile; fileRef = 754600672080A94600DDCCCE /* Cube.h */; };
 		7546007A2080AB2100DDCCCE /* rotating-objects.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754600792080AB2100DDCCCE /* rotating-objects.cpp */; };
 		7546007D2080AB4300DDCCCE /* MovingCube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7546007B2080AB4300DDCCCE /* MovingCube.cpp */; };
+		754600A820867DC500DDCCCE /* AbstractObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754600622080A94600DDCCCE /* AbstractObject.cpp */; };
+		754600AB20867DC500DDCCCE /* AbstractObject.h in Sources */ = {isa = PBXBuildFile; fileRef = 754600632080A94600DDCCCE /* AbstractObject.h */; };
+		754600AC20867DC500DDCCCE /* Cube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754600662080A94600DDCCCE /* Cube.cpp */; };
+		754600AD20867DC500DDCCCE /* Cube.h in Sources */ = {isa = PBXBuildFile; fileRef = 754600672080A94600DDCCCE /* Cube.h */; };
+		754600AE20867DC500DDCCCE /* RGBColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7546006A2080A94600DDCCCE /* RGBColor.cpp */; };
+		754600AF20867DC500DDCCCE /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7546008E20867CD400DDCCCE /* Scene.cpp */; };
+		754600B120867DC500DDCCCE /* ColorHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754600642080A94600DDCCCE /* ColorHelper.cpp */; };
+		754600B320867DC500DDCCCE /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D8193520779EE900C85590 /* OpenGL.framework */; };
+		754600BB20867E8E00DDCCCE /* board-example.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754600B920867E6D00DDCCCE /* board-example.cpp */; };
+		754600BF20867F1900DDCCCE /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754600BD20867F1900DDCCCE /* Camera.cpp */; };
+		754600CF2087353300DDCCCE /* Vector3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754600CD2087353300DDCCCE /* Vector3D.cpp */; };
+		754600D22087638C00DDCCCE /* AxisHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754600D02087638C00DDCCCE /* AxisHelper.cpp */; };
 		75D8193620779EE900C85590 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D8193520779EE900C85590 /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		754600B420867DC500DDCCCE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		75D8192820779DF800C85590 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -43,11 +64,30 @@
 		754600792080AB2100DDCCCE /* rotating-objects.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "rotating-objects.cpp"; path = "examples/rotating-objects.cpp"; sourceTree = "<group>"; };
 		7546007B2080AB4300DDCCCE /* MovingCube.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MovingCube.cpp; path = examples/custom_objects/MovingCube.cpp; sourceTree = "<group>"; };
 		7546007C2080AB4300DDCCCE /* MovingCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MovingCube.h; path = examples/custom_objects/MovingCube.h; sourceTree = "<group>"; };
+		7546008E20867CD400DDCCCE /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
+		7546008F20867CD400DDCCCE /* Scene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Scene.hpp; sourceTree = "<group>"; };
+		754600B820867DC500DDCCCE /* board-example */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "board-example"; sourceTree = BUILT_PRODUCTS_DIR; };
+		754600B920867E6D00DDCCCE /* board-example.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "board-example.cpp"; path = "examples/board-example.cpp"; sourceTree = "<group>"; };
+		754600BD20867F1900DDCCCE /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
+		754600BE20867F1900DDCCCE /* Camera.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Camera.hpp; sourceTree = "<group>"; };
+		754600C320868F7300DDCCCE /* Point3D.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Point3D.hpp; sourceTree = "<group>"; };
+		754600CD2087353300DDCCCE /* Vector3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector3D.cpp; sourceTree = "<group>"; };
+		754600CE2087353300DDCCCE /* Vector3D.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Vector3D.hpp; sourceTree = "<group>"; };
+		754600D02087638C00DDCCCE /* AxisHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AxisHelper.cpp; sourceTree = "<group>"; };
+		754600D12087638C00DDCCCE /* AxisHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxisHelper.h; sourceTree = "<group>"; };
 		75D8192A20779DF800C85590 /* rotating-objects */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "rotating-objects"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75D8193520779EE900C85590 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		754600B220867DC500DDCCCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754600B320867DC500DDCCCE /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		75D8192720779DF800C85590 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -82,15 +122,33 @@
 		7546007F2080AB5300DDCCCE /* examples */ = {
 			isa = PBXGroup;
 			children = (
+				754600B920867E6D00DDCCCE /* board-example.cpp */,
 				754600792080AB2100DDCCCE /* rotating-objects.cpp */,
 				7546007E2080AB4700DDCCCE /* custom_objects */,
 			);
 			name = examples;
 			sourceTree = "<group>";
 		};
+		754600BC20867F0700DDCCCE /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				754600BD20867F1900DDCCCE /* Camera.cpp */,
+				754600BE20867F1900DDCCCE /* Camera.hpp */,
+			);
+			name = Camera;
+			sourceTree = "<group>";
+		};
 		75D8192120779DF800C85590 = {
 			isa = PBXGroup;
 			children = (
+				754600D02087638C00DDCCCE /* AxisHelper.cpp */,
+				754600D12087638C00DDCCCE /* AxisHelper.h */,
+				754600CD2087353300DDCCCE /* Vector3D.cpp */,
+				754600CE2087353300DDCCCE /* Vector3D.hpp */,
+				754600C320868F7300DDCCCE /* Point3D.hpp */,
+				754600BC20867F0700DDCCCE /* Camera */,
+				7546008E20867CD400DDCCCE /* Scene.cpp */,
+				7546008F20867CD400DDCCCE /* Scene.hpp */,
 				754600722080AA1B00DDCCCE /* Objects */,
 				754600642080A94600DDCCCE /* ColorHelper.cpp */,
 				754600652080A94600DDCCCE /* ColorHelper.h */,
@@ -107,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				75D8192A20779DF800C85590 /* rotating-objects */,
+				754600B820867DC500DDCCCE /* board-example */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,6 +181,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		754600A620867DC500DDCCCE /* board-example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 754600B520867DC500DDCCCE /* Build configuration list for PBXNativeTarget "board-example" */;
+			buildPhases = (
+				754600A720867DC500DDCCCE /* Sources */,
+				754600B220867DC500DDCCCE /* Frameworks */,
+				754600B420867DC500DDCCCE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "board-example";
+			productName = OpenGL_Test;
+			productReference = 754600B820867DC500DDCCCE /* board-example */;
+			productType = "com.apple.product-type.tool";
+		};
 		75D8192920779DF800C85590 /* rotating-objects */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75D8193120779DF800C85590 /* Build configuration list for PBXNativeTarget "rotating-objects" */;
@@ -167,11 +243,30 @@
 			projectRoot = "";
 			targets = (
 				75D8192920779DF800C85590 /* rotating-objects */,
+				754600A620867DC500DDCCCE /* board-example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		754600A720867DC500DDCCCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754600A820867DC500DDCCCE /* AbstractObject.cpp in Sources */,
+				754600AB20867DC500DDCCCE /* AbstractObject.h in Sources */,
+				754600AC20867DC500DDCCCE /* Cube.cpp in Sources */,
+				754600BB20867E8E00DDCCCE /* board-example.cpp in Sources */,
+				754600BF20867F1900DDCCCE /* Camera.cpp in Sources */,
+				754600CF2087353300DDCCCE /* Vector3D.cpp in Sources */,
+				754600AD20867DC500DDCCCE /* Cube.h in Sources */,
+				754600AE20867DC500DDCCCE /* RGBColor.cpp in Sources */,
+				754600D22087638C00DDCCCE /* AxisHelper.cpp in Sources */,
+				754600AF20867DC500DDCCCE /* Scene.cpp in Sources */,
+				754600B120867DC500DDCCCE /* ColorHelper.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		75D8192620779DF800C85590 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -190,6 +285,38 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		754600B620867DC500DDCCCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/opt/X11/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/opt/X11/lib,
+					/usr/local/lib,
+				);
+				OTHER_LDFLAGS = "-lGLUT";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		754600B720867DC500DDCCCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/opt/X11/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/opt/X11/lib,
+					/usr/local/lib,
+				);
+				OTHER_LDFLAGS = "-lGLUT";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		75D8192F20779DF800C85590 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -314,6 +441,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		754600B520867DC500DDCCCE /* Build configuration list for PBXNativeTarget "board-example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				754600B620867DC500DDCCCE /* Debug */,
+				754600B720867DC500DDCCCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		75D8192520779DF800C85590 /* Build configuration list for PBXProject "OpenGLHelper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

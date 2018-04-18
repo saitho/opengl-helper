@@ -9,6 +9,10 @@
 #ifndef AbstractObject_h
 #define AbstractObject_h
 #include <GL/freeglut.h>
+#include "Point3D.hpp"
+#include <list>
+#include <vector>
+#include <algorithm>
 
 enum RotateAxes {
     X = 0,
@@ -20,21 +24,21 @@ enum RotateAxes {
     XYZ = 6
 };
 
-typedef struct {
-    float x = 0.;
-    float y = 0.;
-    float z = 0.;
-} Point3D;
-
 class AbstractObject {
 protected:
+    bool isDrawn = false;
     void preDraw();
     void postDraw();
 public:
     float rotateDegree = 0.;
     Point3D rotatePoint;
     Point3D pos;
+    AbstractObject* clippedTo = nullptr;
+    std::vector<AbstractObject*> clippedObjects;
     
+    void clipTo(AbstractObject* object);
+    
+    void resetDrawn();
     virtual void draw() = 0;
     virtual void animate(int time) = 0;
     

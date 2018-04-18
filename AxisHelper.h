@@ -13,7 +13,7 @@
 class AxisHelper {
     float lineWidth = 2.5;
     float lineLength = 10;
-    float originSize = 0.05;
+    float originSize = 0.01;
     bool showOrigin = true;
     
 public:

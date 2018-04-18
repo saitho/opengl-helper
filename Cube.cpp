@@ -17,6 +17,9 @@ void Cube::animate(int time) {
 }
 
 void Cube::draw() {
+    if (this->isDrawn) {
+        return;
+    }
     this->preDraw();
     
     glBegin(GL_POLYGON);   //Vorderseite

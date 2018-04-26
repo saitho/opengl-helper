@@ -44,9 +44,10 @@ void RenderScene() //Zeichenfunktion
     
     // look on the scene from top left
     gluLookAt ( 0., 0., 1., 0., 0., -1., 0., 1., 0.);
-
+    
     for(std::list<AbstractObject*>::iterator it = scene.begin(); it != scene.end(); ++it) {
         (*it)->draw();
+        (*it)->resetDrawn();
     }
     
     glutSwapBuffers();

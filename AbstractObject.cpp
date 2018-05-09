@@ -35,7 +35,9 @@ void AbstractObject::clipTo(AbstractObject* object) {
         }
     }
     this->clippedTo = object;
-    object->clippedObjects.push_back(this);
+    if (object != nullptr) {
+        object->clippedObjects.push_back(this);
+    }
 }
 
 AbstractObject* AbstractObject::translate(Point3D point) {

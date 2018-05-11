@@ -33,9 +33,8 @@ public:
     float rotateDegree = 0.;
     Point3D rotatePoint;
     Point3D pos;
-    AbstractObject* clippedTo = nullptr;
-    std::vector<AbstractObject*> clippedObjects;
     
+    AbstractObject* clippedTo = nullptr;
     void clipTo(AbstractObject* object);
     
     void resetDrawn();

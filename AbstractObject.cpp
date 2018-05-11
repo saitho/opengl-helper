@@ -27,17 +27,7 @@ AbstractObject* AbstractObject::rotate(float degree, RotateAxes axis) {
 }
 
 void AbstractObject::clipTo(AbstractObject* object) {
-    if (this->clippedTo != nullptr) {
-        // remove relation from object it was previously attached to, if any
-        std::vector<AbstractObject*>::iterator position = std::find(this->clippedTo->clippedObjects.begin(), this->clippedTo->clippedObjects.end(), this);
-        if (position != this->clippedTo->clippedObjects.end()) { // element was found
-            this->clippedTo->clippedObjects.erase(position);
-        }
-    }
     this->clippedTo = object;
-    if (object != nullptr) {
-        object->clippedObjects.push_back(this);
-    }
 }
 
 AbstractObject* AbstractObject::translate(Point3D point) {
@@ -68,7 +58,15 @@ AbstractObject* AbstractObject::move(float x, float y, float z) {
 
 void AbstractObject::preDraw() {
     glPushMatrix();
-    glTranslatef(this->pos.x, this->pos.y, this->pos.z);
+    
+    Point3D pos = this->pos;
+    if (this->clippedTo != nullptr) {
+        pos.x += this->clippedTo->pos.x;
+        pos.y += this->clippedTo->pos.y;
+        pos.z += this->clippedTo->pos.z;
+    }
+    
+    glTranslatef(pos.x, pos.y, pos.z);
     if (
         this->rotateDegree != 0. &&
         (this->rotatePoint.x || this->rotatePoint.y || this->rotatePoint.z)
@@ -86,10 +84,5 @@ void AbstractObject::postDraw() {
         ) {
         glPopMatrix();
     }
-    // draw clipped objects
-    for(std::vector<AbstractObject*>::iterator it = this->clippedObjects.begin(); it != this->clippedObjects.end(); ++it) {
-        (*it)->draw();
-    }
-    
     glPopMatrix();
 }

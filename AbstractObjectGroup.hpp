@@ -14,18 +14,13 @@
 
 class AbstractObjectGroup : public AbstractObject {
     std::list<AbstractObject*> board;
+    void preDraw();
+    void postDraw();
     
 public:
     void add(AbstractObject* object);
     void draw();
     void animate(int time);
-    
-    AbstractObject* move(Point3D point);
-    AbstractObject* move(float x, float y, float z);
-    AbstractObject* translate(Point3D point);
-    AbstractObject* translate(float x, float y, float z);
-    AbstractObject* rotate(float degree);
-    AbstractObject* rotate(float degree, RotateAxes axis);
     void resetDrawn();
 };
 

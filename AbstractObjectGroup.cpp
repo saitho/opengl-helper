@@ -12,6 +12,9 @@ void AbstractObjectGroup::add(AbstractObject* object) {
     this->board.push_back(object);
 }
 
+void AbstractObjectGroup::clearBoard() {
+    this->board.clear();
+}
 
 void AbstractObjectGroup::draw() {
     if (this->isDrawn) {

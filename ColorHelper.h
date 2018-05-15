@@ -14,8 +14,14 @@
 
 enum Color {
     RED = 0,
-    BLUE = 1,
-    ORANGE = 2,
+    GREEN = 1,
+    BLUE = 2,
+    CYAN = 3,
+    MAGENTA = 4,
+    YELLOW = 5,
+    BLACK = 6,
+    WHITE = 7,
+    ORANGE = 8,
 };
 
 class ColorHelper {

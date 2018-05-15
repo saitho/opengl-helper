@@ -19,6 +19,7 @@ class AbstractObjectGroup : public AbstractObject {
     
 public:
     void add(AbstractObject* object);
+    void clearBoard();
     void draw();
     void animate(int time);
     void resetDrawn();

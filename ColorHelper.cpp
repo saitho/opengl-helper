@@ -11,10 +11,22 @@ RGBColor ColorHelper::getColor(Color color) {
     switch(color) {
         case Color::RED:
             return RGBColor(255, 0, 0);
-        case Color::ORANGE:
-            return RGBColor(255, 165, 0);
+        case Color::GREEN:
+            return RGBColor(0, 255, 0);
         case Color::BLUE:
             return RGBColor(0, 0, 255);
+        case Color::CYAN:
+            return RGBColor(0, 255, 255);
+        case Color::MAGENTA:
+            return RGBColor(255, 0, 255);
+        case Color::YELLOW:
+            return RGBColor(255, 255, 0);
+        case Color::BLACK:
+            return RGBColor(0, 0, 0);
+        case Color::WHITE:
+            return RGBColor(255, 255, 255);
+        case Color::ORANGE:
+            return RGBColor(255, 165, 0);
         default:
             return RGBColor();
     }

@@ -92,6 +92,12 @@ void Scene::display() {
     glutSwapBuffers();
     // reset drawn state on all objects
     for(std::list<AbstractObject*>::iterator it = this->board.begin(); it != this->board.end(); ++it) {
-        (*it)->resetDrawn();
+        // check if group
+        AbstractObjectGroup* group = dynamic_cast<AbstractObjectGroup*>(*it);
+        if (group != nullptr) {
+            group->resetDrawn();
+        } else {
+            (*it)->resetDrawn();
+        }
     }
 }

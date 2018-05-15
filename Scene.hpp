@@ -15,6 +15,7 @@
 #include "AxisHelper.h"
 #include "Camera.hpp"
 #include "AbstractObject.h"
+#include "AbstractObjectGroup.hpp"
 #include <GL/freeglut.h>
 
 class Scene {

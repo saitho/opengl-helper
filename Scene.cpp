@@ -53,6 +53,10 @@ void Scene::setShowAxes(bool showAxes) {
     this->showAxes = showAxes;
 }
 
+bool Scene::isShowAxes() {
+    return this->showAxes;
+}
+
 void Scene::animate(int value) {
     // call RenderScene
     glutPostRedisplay();

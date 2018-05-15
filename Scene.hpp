@@ -35,6 +35,7 @@ public:
     void reshape(int width, int height); // ReshapeFunc
     void animate(int value);
     void setShowAxes(bool showAxes);
+    bool isShowAxes();
 };
 
 #endif /* Scene_hpp */

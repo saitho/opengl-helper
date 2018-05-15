@@ -29,9 +29,6 @@ Camera* Scene::getActiveCamera() {
 }
 
 Scene::~Scene() {
-    for(std::list<AbstractObject*>::iterator it = this->board.begin(); it != this->board.end(); ++it) {
-        delete *it;
-    }
     for(std::vector<Camera*>::iterator it = this->cameras.begin(); it != this->cameras.end(); ++it) {
         delete *it;
     }

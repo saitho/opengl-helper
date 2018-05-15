@@ -13,6 +13,7 @@
 #include <list>
 
 class AbstractObjectGroup : public AbstractObject {
+protected:
     std::list<AbstractObject*> board;
     void preDraw();
     void postDraw();

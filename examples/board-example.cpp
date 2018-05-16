@@ -1,6 +1,4 @@
 #include <GL/freeglut.h>         //l‰dt alles f¸r OpenGL
-#include <list>
-#include <iterator>
 #include "../ColorHelper.h"
 #include "../Cube.h"
 #include "Scene.hpp"
